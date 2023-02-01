@@ -57,6 +57,7 @@ end
 group :test do
   gem 'capybara'
   gem 'chromedriver-helper'
+  gem 'factory_bot_rails'
   gem 'faker'
   gem 'selenium-webdriver'
 end
