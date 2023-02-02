@@ -1,24 +1,38 @@
-# README
+# Customers CRUD App
+## Sobre
+O projeto é uma aplicação básica de cadastro de clientes desenvolvida seguindo o fluxo do TDD.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tecnologias utilizadas
+- [Ruby](https://www.ruby-lang.org/pt/) (2.5.0)
+- [Rails](https://rubyonrails.org/) (5.2.8.1)
+- [SQLite3](http://www.sqlite.org) (3.37.2)
 
-Things you may want to cover:
+## Ferramentas de teste
+- [RSpec](https://github.com/rspec/rspec-rails) (3.9.1)
+- [Capybara](https://github.com/teamcapybara/capybara) (3.35.3)
+- [FactoryBot](https://github.com/thoughtbot/factory_bot_rails) (4.11.1)
+- [Faker](https://github.com/faker-ruby/faker) (2.22.0)
 
-* Ruby version
+## Instruções para uso
+Clone o projeto em sua máquina e instale as dependências do projeto com os comandos:
+```bash
+yarn
+bundle
+```
 
-* System dependencies
+Logo após, crie o banco de dados com:
+```bash
+rails db:create:all
+rails db:migrate
+```
+Levante e rode a aplicação com:
+```bash
+rails s
+```
+E, finalmente, acesse ```http://localhost:3000``` no seu navegador.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Como rodar a suíte de teste
+Para rodar os testes escritos, rode no seu terminal:
+```bash
+bin/rspec spec/features/
+```
